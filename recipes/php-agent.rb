@@ -4,7 +4,7 @@
 #
 # Copyright 2012, Escape Studios
 #
-
+rightscale_marker :begin
 package "newrelic-php5" do
 	action :upgrade
 end
@@ -75,3 +75,4 @@ else
 		action [:enable, :start] #starts the service if it's not running and enables it to start at system boot time
 	end
 end
+rightscale_marker :end

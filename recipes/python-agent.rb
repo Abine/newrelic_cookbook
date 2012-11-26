@@ -4,7 +4,7 @@
 #
 # Copyright 2012, Escape Studios
 #
-
+rightscale_marker :begin
 include_recipe "python::pip"
 
 # install latest python agent
@@ -28,3 +28,4 @@ template "/etc/newrelic/newrelic.ini" do
 	)
 	action :create
 end
+rightscale_marker :end

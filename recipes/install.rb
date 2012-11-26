@@ -4,7 +4,7 @@
 #
 # Copyright 2012, Escape Studios
 #
-
+rightscale_marker :begin
 case node[:platform]
 	when "debian", "ubuntu"
 		#trust the New Relic GPG Key
@@ -61,3 +61,4 @@ case node[:platform]
 			action :install
 		end
 end
+rightscale_marker :end
